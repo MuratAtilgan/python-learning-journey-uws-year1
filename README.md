@@ -12,10 +12,12 @@ Each week includes practice labs, exercises, and enhanced versions of programs c
 - Object-Oriented Programming (OOP)
 
 ###  Key Projects
-- **Mark-to-Grade System (v1–v7.5 and beyond...)** – student record manager with grading logic, statistics, validation, and averages.  
+- **Mark-to-Grade System (v1–v8.0 and beyond...)** – student record manager with grading logic, statistics, validation, and averages.  
 - **Shopping List App** – data stored via pickle with dynamic add/delete menu.  
 - **Car Hire System** – local fleet management CLI app simulating a micro-database.  
 - **Mathematical Tools** – range tables, trigonometric calculator, and palindrome validator.
+- **Recipe & Nutrition Module** – simple CLI recipe manager generating healthy meal suggestions with ingredient tracking and calorie breakdown.
+- **Holiday & Travel Program** – multi-layer loop project simulating travel itineraries, hotel combinations, and date scheduling across destinations.
    
 
 ###  Environment
