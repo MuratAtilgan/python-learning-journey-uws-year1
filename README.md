@@ -122,6 +122,6 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ---
 
-**Last Updated:** October 2025
+**Last Updated:** 30 October 2025
 
 *"Every line of code is a step forward in mastering the craft."*
