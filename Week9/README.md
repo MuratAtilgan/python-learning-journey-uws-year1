@@ -30,7 +30,7 @@ All applications now use **pickle** for permanent data storage:
 - `holidays.pck` - Travel plans
 - `recipes.pck` - Recipe collection
 
-  # Week 9 Achievement
+# Week 9 Achievement
 
 - Six fully functional applications with persistent storage
 - Advanced data management and validation
