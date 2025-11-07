@@ -12,7 +12,7 @@ A complete library management application with full CRUD operations and persiste
 - Duplicate prevention (same title + author check)
 - Data persistence using pickle
 
-Marks_to_grade V9.0
+# Marks_to_grade V9.0
 Enhanced version with:
 - Student management (add/delete/update/search)
 - Automatic grade calculation
@@ -20,7 +20,7 @@ Enhanced version with:
 - Grade distribution analysis
 - Input validation and duplicate prevention
 
-Data Persistence
+# Data Persistence
 
 All applications now use **pickle** for permanent data storage:
 - `library.pck` - Book collection
@@ -30,7 +30,7 @@ All applications now use **pickle** for permanent data storage:
 - `holidays.pck` - Travel plans
 - `recipes.pck` - Recipe collection
 
-  Week 9 Achievement
+  # Week 9 Achievement
 
 - Six fully functional applications with persistent storage
 - Advanced data management and validation
