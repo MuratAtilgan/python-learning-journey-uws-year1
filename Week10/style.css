@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #0ff;
+    font-family: 'Courier New', monospace;
+    line-height: 1.7;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0ff;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: #66ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+h1 {
+    color: #0ff;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: #1a1a2e;
+    border-radius: 8px;
+    border: 1px solid #0ff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.menu-btn {
+    background: #000;
+    color: #0ff;
+    border: 1px solid #0ff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 120px;
+}
+
+.menu-btn:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.menu-btn.active {
+    background: #0ff;
+    color: #000;
+    border-color: #66ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.view {
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #0ff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.view::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #66ffff, transparent);
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0; }
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome {
+    text-align: center;
+    padding: 60px 20px;
+    color: #66ffff;
+    font-size: 1.4em;
+    border: 1px dashed #0ff;
+    border-radius: 10px;
+    margin: 30px 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.welcome h2 {
+    color: #0ff;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #66ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #0ff;
+    border-radius: 6px;
+    background: #000;
+    color: #0ff;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #66ffff;
+    box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.3),
+                0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+button {
+    background: #000;
+    color: #0ff;
+    border: 2px solid #0ff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    min-width: 150px;
+}
+
+button:hover {
+    background: #0ff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.result {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #0ff;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0.95em;
+}
+
+.result.success {
+    border-color: #66ffff;
+    background: rgba(0, 100, 100, 0.1);
+    color: #66ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.result.error {
+    border-color: #ff4d4d;
+    background: rgba(100, 0, 0, 0.1);
+    color: #ff6666;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.2);
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+.student-item {
+    padding: 16px;
+    border: 1px solid #0ff;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: rgba(0, 15, 15, 0.3);
+    transition: all 0.3s ease;
+    border-left: 4px solid #0ff;
+}
+
+.student-item:hover {
+    background: rgba(0, 30, 30, 0.5);
+    border-left-color: #66ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.stats-item,
+.distribution-item {
+    margin-bottom: 18px;
+    padding: 14px;
+    border-bottom: 1px dashed #0ff;
+    color: #66ffff;
+}
+
+.distribution-item {
+    border: none;
+    background: rgba(0, 30, 30, 0.4);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 14px;
+}
+
+.bar {
+    height: 16px;
+    background: linear-gradient(90deg, #0ff, #66ffff);
+    border-radius: 8px;
+    margin-top: 6px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+.distribution-item p {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #0ff;
+}
+
+.search-options {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.search-options button {
+    flex: 1;
+    padding: 12px;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #0ff;
+    color: #66ffff;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    .menu-btn {
+        min-width: 100px;
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    .view {
+        padding: 20px;
+    }
+    .student-item {
+        padding: 12px;
+    }
+}
+
+/* Glowing border effect on active views */
+.view.active {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    border-color: #66ffff;
+}
