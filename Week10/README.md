@@ -1,10 +1,10 @@
 # Week 10 - Desktop Application with Electron
 
-## 📊 Marks to Grade V10.0 - Desktop Application
+## Marks to Grade V10.0 - Desktop Application
 
 Professional student grade management system built with Electron framework.
 
-### 🚀 Quick Start
+### Quick Start
 
 ```bash
 # Install dependencies
@@ -14,24 +14,24 @@ npm install
 npm start
 ```
 
-### ✨ Features
+###  Features
 
-- ➕ Add new students with validation
-- 🗑️ Delete students from database
-- ✏️ Update student marks
-- 🔍 Search by surname or ID
-- 📋 View all students
-- 📊 Statistics dashboard
-- 📈 Grade distribution chart
+-  Add new students with validation
+-  Delete students from database
+-  Update student marks
+-  Search by surname or ID
+-  View all students
+-  Statistics dashboard
+-  Grade distribution chart
 
-### 🛠️ Technology Stack
+###  Technology Stack
 
 - **Electron** 31.0.0 - Desktop framework
 - **Node.js** - Backend runtime
 - **HTML5/CSS3** - Frontend interface
 - **JavaScript ES6+** - Application logic
 
-### 📂 File Structure
+###  File Structure
 
 ```
 Week-10/
@@ -44,7 +44,7 @@ Week-10/
 └── main.py          # Python V9.0 CLI version
 ```
 
-### 🎓 Grading System
+###  Grading System
 
 | Mark | Grade |
 |------|-------|
@@ -57,7 +57,7 @@ Week-10/
 | 30-39| D     |
 | 0-29 | E     |
 
-### 🎯 Learning Outcomes
+###  Learning Outcomes
 
 - Desktop application development with Electron
 - IPC (Inter-Process Communication)
@@ -66,7 +66,7 @@ Week-10/
 - State management
 - Data persistence with JSON
 
-### 📈 Version History
+###  Version History
 
 - **V10.0** - Desktop GUI with Electron
 - **V9.0** - Python CLI with Lab 9 methodology
